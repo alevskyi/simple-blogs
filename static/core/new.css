@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+.error{
+	font-size: 15px;
+	font-weight: 700;
+	color: red;
+	
+}
+
+.container{
+	float: top;
+   
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  
+}
+
+
+.spacer{
+	
+	width: 25%;
+	
+	border-style: solid;
+   	border-color: transparent;
+	  
+}
+
+.spacer.left{
+
+	float: left; 
+}
+
+.spacer.middle{	
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.spacer.right{
+
+	float: right;
+}

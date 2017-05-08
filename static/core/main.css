@@ -1,0 +1,337 @@
+@CHARSET "UTF-8";
+
+.pannel {
+	display: table;
+	table-layout: fixed;
+	
+    float: top;
+    margin: 10px auto;
+    height: 50px;
+    width: auto;
+    overflow: auto;
+    background-color: white;
+       
+}
+
+.spacer {
+	display: table-cell;
+    margin: 0 auto auto 0;
+    background-color: #2c2c2c;
+	
+    width: 50px;
+}
+
+.spacer.left {
+
+    width: 80px;
+}
+
+.spacer.right {
+	
+    width: 50px;
+}
+
+.button {
+	
+	display: table-cell;
+    margin: 0 auto auto 0;
+    overflow: auto;
+    
+}
+
+.button_body{
+		
+	height: 50px;
+	line-height: 50px;
+	
+	font-family: "URW Gothic L";
+	font-size: 32px;
+	font-style: oblique;
+	text-align: center;
+	font-weight: 600;
+	
+	cursor: pointer;
+	
+	margin-left: 6px;
+	margin-right: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	color: #766b6b;
+	background-color: #2c2c2c;
+	
+}   
+
+.button_body.logo{
+	
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-left: 0px;
+	margin-right: 0px;
+		
+	font-family: monospace;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	color: white;
+		
+}
+
+.button_body.last{
+	margin-left: 0px;
+	margin-right: 6px;
+}
+
+.post { 
+	
+	float: top;
+	
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+	width: 900px;
+	max-height: 900px;
+	background-color: white;
+	border: 2px solid black; 
+	border-radius: 15px;
+}
+
+.post.detailed{
+	
+	max-height: none;
+}
+
+
+.theme {
+	
+	float: top;
+	
+	overflow: hidden;
+  	  	
+	max-height: 38px;
+			
+	text-align: center;
+	font-family: "Monospace";
+	font-size: 18px;
+	line-height: 18px;
+	
+}
+
+
+.image {
+	display: block;
+	float: top;
+	max-width: 800px;
+	max-height: 600px;	
+       
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+  	
+}
+
+.text {
+	
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	text-align: justify;
+	
+	padding: 10px; 
+	
+	font-size: 15px;
+	line-height: 20px;
+	
+	max-height: none;
+	
+}
+
+.postBottom{
+	padding-bottom: 0px;
+	height: 20px;
+	
+	font-family: "URW Gothic L";
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.postBottom.comments{
+	
+	padding-left: 10px;
+	text-align: right;
+	float: left;  
+	
+}
+
+.postBottom.date{
+	
+	padding-right: 10px;
+	float: right;
+	
+}
+
+.postBottom.user{	
+	margin: 0 auto;
+	text-align: center;
+	padding-right: 10px;
+}
+
+
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+.title{
+	float: top;
+	
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+    
+    font-family: monospace;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+
+}
+
+.title.comments {
+	
+	font-size: 18px;
+}
+
+.center{
+	float: top;
+	
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+    width: 800px;
+   
+}
+
+.post.comment{
+	
+	width: 700px;
+	
+	max-height: auto;
+}
+
+
+.comment_top{
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 25px;
+	
+	font-family: "URW Gothic L";
+	font-size: 16px;
+	font-weight: 700;
+	
+}
+
+.comment_top.left{
+	
+	text-align: left;
+	float: left;
+	padding-left: 20px;
+	
+}
+
+.comment_top.right{
+	
+	text-align: right;
+	float: right;
+	padding-right: 20px;
+	
+}
+
+.text.comment{
+	padding: 10px;
+	overflow: visible;
+	max-height: none;
+}
+
+
+.error{
+	font-size: 15px;
+	font-weight: 700;
+	color: red;
+	
+}
+
+
+/***PAGER***/
+
+.pager {
+	display: table;
+	table-layout: fixed;
+	
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    height: 20px;
+    width: auto;
+	 
+}
+
+.page {
+	
+	display: table-cell;
+    margin: 0 auto auto 0;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    
+   	vertical-align: middle;
+    
+    font-family: monospace;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	
+	text-decoration: none;
+	
+	cursor: pointer;
+  
+}
+
+.page:link {
+    text-decoration: none; 
+    color: black;   
+}
+
+.page:visited {
+    text-decoration: none;
+    color: black; 
+}
+
+.page:hover {
+    text-decoration: none;
+    color: black; 
+}
+
+.page:active {
+    text-decoration: none;
+    color: black; 
+}
+
+
+.page.active {
+	
+    color: white;
+    font-weight: 600;
+   
+}
+
+

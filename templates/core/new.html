@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'core/new.css' %}">
+<title>New Post</title>
+</head>
+<body style="background-image: url(&quot;{% static 'core/background.jpg' %}&quot;);">
+	
+	<div class="container">
+	
+	<div class="spacer left"></div>
+		
+	<div class="spacer right"></div>
+
+	<div class="spacer middle">
+	<form action="{{ request.path }}" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+		<table frame="border" bgcolor="#FFFFFF" style="border-collapse: collapse; border: 3px solid black;">
+			<col width="90px"/>
+			<col width="200px"/>
+			<col width="40px"/>
+			
+			<tr>
+				<td align="center" colspan="3"><span style="font-weight: 700; font-size: 36px;">New Post</span></td>
+			</tr>
+			
+			<tr>
+				<td align="center"><span>Theme:</span></td>
+				<td align="center" colspan="2">{{ form.theme }}</td>
+			</tr>
+			
+			<tr>
+				<td align="center" colspan="3"><span class="error">{% for error in form.theme.errors %}
+				{{ error }}
+				{% endfor %}
+				</span></td>
+			</tr>
+			
+			<tr>
+				<td align="center"><span>Text:</span></td>
+				<td align="center" colspan="2">{{ form.text }}</td>
+			</tr>
+			
+			<tr>
+				<td align="center" colspan="3"><span class="error">{% for error in form.text.errors %}
+				{{ error }}
+				{% endfor %}
+				</span></td>
+			</tr>
+			
+			<tr>
+				<td align="center"><span>Image:</span></td>
+				<td align="center">{{ form.image }}</td>
+				<td><input type="submit" value="Post"></td>
+			</tr>
+
+		</table>	
+	</form>
+	</div>	
+	
+	</div>	
+</body>
+</html>
