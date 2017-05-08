@@ -2,6 +2,7 @@ import re
 from urlparse import urlparse, urlunparse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http.response import HttpResponseRedirect
+from blog.settings import POSTS_PER_PAGE
 
 class ReturningRedirect(Exception):
     def __init__(self, redirect):
@@ -15,7 +16,7 @@ def break_on_pages(posts, request):
     '''
     Return context of posts divided on pages and urls to pages. Raises ReturningRedirect exception if url is invalid
     '''
-    paginator = Paginator(posts, 2)
+    paginator = Paginator(posts, POSTS_PER_PAGE)
     
     page = request.GET.get('page')
     

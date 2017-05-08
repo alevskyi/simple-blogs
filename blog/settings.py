@@ -100,3 +100,5 @@ MEDIA_URL = 'static/images/'
 LOGIN_URL = '/login/'
 
 LOGOUT_URL = '/logout/'
+
+POSTS_PER_PAGE = 2
